@@ -161,6 +161,9 @@ The .spec.ts files that NestJS auto-generates are designed for automated testing
 
 - How to run test: `npm run test`.
 
+## Challenges faced and how I solved them:
+  I faced some challenges both in running application and testing it. For running, I ran the application without creating the database manually that I had mentioned for it to use. I also had issues with automatically creating the ids to each json object. The testing issue was related to not fixing the Object relational mapper details (dbname, password, database etc). I fixed most issues with research and got some answers via stack overflow, Generative AI in google search and copilot.
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
