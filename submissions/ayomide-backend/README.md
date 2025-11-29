@@ -162,7 +162,34 @@ The .spec.ts files that NestJS auto-generates are designed for automated testing
 - How to run test: `npm run test`.
 
 ## Challenges faced and how I solved them:
-  I faced some challenges both in running application and testing it. For running, I ran the application without creating the database manually that I had mentioned for it to use. I also had issues with automatically creating the ids to each json object. The testing issue was related to not fixing the Object relational mapper details (dbname, password, database etc). I fixed most issues with research and got some answers via stack overflow, Generative AI in google search and copilot.
+During this project, I encountered several real-world engineering challenges that strengthened my problem-solving skills:
+
+1. #### Database Connection & Initialization
+I initially ran the application without manually creating the PostgreSQL database, which resulted in connection errors. I resolved this by configuring the database properly, ensuring TypeORM could synchronize schema successfully.
+
+2. #### Automatic ID Generation for Posts
+The Post entity was not generating unique IDs as expected. This required deeper understanding of TypeORM decorators and entity configuration. By revisiting documentation and experimenting with configurations, I was able to set up proper primary key generation.
+
+3. #### Testing Environment Setup
+My test environment failed during setup because I didn’t fully configure the ORM options (database name, password, host, entities). I fixed this by creating a dedicated test database configuration in the TestingModule and ensuring consistency with the development environment.
+
+4. #### Debugging Through Research
+For all issues, I used a combination of technical documentation, Stack Overflow, GitHub issues, and Generative AI tools (Google + Copilot) to understand underlying causes rather than applying quick fixes. This reinforced my ability to self-learn and systematically debug backend services.
+
+## What I Learned:
+    This project helped me build stronger backend engineering discipline and deepen my understanding of API development. Key learnings include:
+
+- Database-first thinking: I learned how important it is to set up databases correctly before running migrations or initializing ORM-driven applications.
+
+- Clean architectural structure: Working with controllers, services, and modules improved my understanding of NestJS’s modular structure and how scalable backend systems are organized.
+
+- Testing fundamentals: Setting up unit tests taught me how to isolate components, mock dependencies, and reason about predictable backend behavior.
+
+- Better debugging habits: I developed a more structured debugging approach—checking logs, reproducing errors, validating configurations, and researching similar issues.
+
+- Confidence in self-learning: Solving issues through documentation and online research strengthened my independence as a developer, showing me that I can navigate unfamiliar problems with persistence and curiosity.
+
+This project ultimately improved my backend reasoning, problem-solving confidence, and readiness for real-world engineering collaboration.
 
 ## Support
 
