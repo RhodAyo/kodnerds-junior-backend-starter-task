@@ -177,7 +177,7 @@ My test environment failed during setup because I didn’t fully configure the O
 For all issues, I used a combination of technical documentation, Stack Overflow, GitHub issues, and Generative AI tools (Google + Copilot) to understand underlying causes rather than applying quick fixes. This reinforced my ability to self-learn and systematically debug backend services.
 
 ## What I Learned:
-    This project helped me build stronger backend engineering discipline and deepen my understanding of API development. Key learnings include:
+This project helped me build stronger backend engineering discipline and deepen my understanding of API development. Key learnings include:
 
 - Database-first thinking: I learned how important it is to set up databases correctly before running migrations or initializing ORM-driven applications.
 
